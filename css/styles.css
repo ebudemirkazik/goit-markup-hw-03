@@ -1,26 +1,103 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
 }
 ul {
   list-style-type: none;
@@ -28,17 +105,20 @@ ul {
 a {
   text-decoration: none;
 }
-blockquote, q {
-	quotes: none;
+blockquote,
+q {
+  quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
 }
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
 /* font-family: "Raleway", sans-serif; */
@@ -50,13 +130,21 @@ body {
   background-color: #ffffff;
 }
 
+/* container */
+
+.container {
+  background-color: E7E9FC;
+  width: 1440px;
+  margin: 0 auto;
+}
+/* container */
 
 /* HEADER */
-
 header {
   display: flex;
   align-items: center;
-
+  justify-content: center;
+  padding: 24px 24px;
 }
 
 header nav {
@@ -66,11 +154,13 @@ header nav {
 header nav ul {
   display: flex;
   gap: 0 40px;
+  margin-right: 332px;
 }
 
 header address ul {
   display: flex;
   gap: 0 40px;
+  margin-right: 0px;
 }
 
 header nav a {
@@ -81,6 +171,10 @@ header nav a {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #4d5ae5;
+}
+
+header nav .header-logo-link {
+  margin-right: 76px;
 }
 
 header nav .header-logo-link .logo-2 {
@@ -124,6 +218,10 @@ address .address-list .address-link:focus {
 /* HERO SECTİON */
 .hero-image {
   background-color: #2e2f42;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .hero-image .hero-header {
   font-size: 56px;
@@ -131,6 +229,8 @@ address .address-list .address-link:focus {
   letter-spacing: 0.02em;
   text-align: center;
   color: #ffffff;
+  padding: 0 472px;
+  margin-top: 188px;
 }
 .hero-image .hero-button {
   background-color: #4d5ae5;
@@ -141,6 +241,8 @@ address .address-list .address-link:focus {
   letter-spacing: 0.04em;
   color: #ffffff;
   cursor: pointer;
+  padding: 16px 32px;
+  margin-top: 48px;
 }
 .hero-image .hero-button:hover {
   background-color: #404bbf;
@@ -152,6 +254,23 @@ address .address-list .address-link:focus {
 
 /* LİST SECTİON */
 
+.list-section {
+  background-color: #E7E9FC;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section .secret-header {
+  display: flex;
+}
+
+section .list-items {
+  display: flex;
+  padding: 120px 156px 120px 156px;
+  gap: 24px;
+}
+
 section .list-items .list-header {
   font-weight: 500;
   font-size: 20px;
@@ -160,6 +279,7 @@ section .list-items .list-header {
   color: #2e2f42;
 }
 section .list-items .list-items-p {
+  margin-top: 8px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -170,16 +290,31 @@ section .list-items .list-items-p {
 
 /* OUR TEAM SECTİON */
 
+
 .our-team {
-  background-color: #f4f4fd;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  align-items: center;
+  
 }
 .our-team .our-team-header {
+  padding-top: 120px;
+  padding-bottom: 72px;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+}
+section .our-team-list {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-bottom: 120px;
+  text-align: center;
 }
 
 section .our-teams {
@@ -192,45 +327,74 @@ section .ourteam-header {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
 }
 section .our-team-p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px;
 }
 /* OUR TEAM SECTİON */
 
 /* our-portfolio */
+section .our-portfolio {
+  
+  
+}
 
 .our-portfolio h2 {
+  font-weight: bold;
   font-size: 36px;
   line-height: 1.11;
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   color: #2e2f42;
+  padding-top: 120px;
+  padding-bottom: 72px;
+  
 }
+section .portfolio-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  padding-bottom: 120px;
 
+}
+section .portfolio-list .portfolio-4 , .portfolio-5 , .portfolio-6 {
+  margin-top: 48px;
+}
 section .portfolio-header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-top: 32px;
+  margin-left: 16px;
 }
 section .portfolio-p {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  margin-top: 8px;
+  margin-left: 16px;
 }
 /* our-portfolio */
+
 
 /* FOOTER */
 
 footer {
   background-color: #2e2f42;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
+  padding-left: 156px;
 }
 
 footer a {
@@ -242,14 +406,16 @@ footer a {
   text-transform: uppercase;
   color: #4d5ae5;
 }
-
 footer .footer-logo-link .footer-span {
-  color: #F4F4FD;
+  color: #f4f4fd;
 }
-
 footer .footer-p {
   line-height: 1.5;
   color: #f4f4fd;
   letter-spacing: 0.02em;
+  margin-top: 16px;
+  margin-right: 1020px;
+  padding-bottom: 100px;
 }
+
 /* FOOTER */
