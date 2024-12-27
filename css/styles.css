@@ -255,7 +255,7 @@ address .address-list .address-link:focus {
 /* LİST SECTİON */
 
 .list-section {
-  background-color: #E7E9FC;
+  background-color: #e7e9fc;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -290,15 +290,15 @@ section .list-items .list-items-p {
 
 /* OUR TEAM SECTİON */
 
-
 .our-team {
   display: flex;
   flex-direction: column;
   background-color: white;
   align-items: center;
-  
 }
 .our-team .our-team-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
   padding-top: 120px;
   padding-bottom: 72px;
   font-size: 36px;
@@ -340,8 +340,6 @@ section .our-team-p {
 
 /* our-portfolio */
 section .our-portfolio {
-  
-  
 }
 
 .our-portfolio h2 {
@@ -354,17 +352,17 @@ section .our-portfolio {
   color: #2e2f42;
   padding-top: 120px;
   padding-bottom: 72px;
-  
 }
-section .portfolio-list{
+section .portfolio-list {
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
   justify-content: center;
   padding-bottom: 120px;
-
 }
-section .portfolio-list .portfolio-4 , .portfolio-5 , .portfolio-6 {
+section .portfolio-list .portfolio-4,
+.portfolio-5,
+.portfolio-6 {
   margin-top: 48px;
 }
 section .portfolio-header {
@@ -385,7 +383,6 @@ section .portfolio-p {
   margin-left: 16px;
 }
 /* our-portfolio */
-
 
 /* FOOTER */
 
