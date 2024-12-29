@@ -266,7 +266,13 @@ address .address-list .address-link:focus {
 }
 
 section .visually-hidden {
-  display: none;
+  clip: rect(0 0 0 0); 
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap; 
+  width: 1px;
 }
 section .container .list-items {
   display: flex;
@@ -320,7 +326,7 @@ section .our-teams {
   border-radius: 0px 0px 4px 4px;
 }
 
-section .container .our-team-list .our-teams .team-one , .team-two , .team-three , .team-four{
+section .container .our-team-list .our-teams .team-member{
   padding: 32px 0;
 }
 
