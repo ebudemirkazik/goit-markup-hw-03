@@ -260,12 +260,27 @@ address .address-list .address-link:focus {
 
 /* LİST SECTİON */
 
+.list-section {
+  padding: 120px 0
+}
+
+section .visually-hidden {
+  display: none;
+}
+section .container .list-items {
+  display: flex;
+  gap: 24px;
+}
+section .container .list-items .list {
+  width: calc((100% - 72px) / 4);
+}
 section .list-items .list-header {
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: #2e2f42;
+  margin-bottom: 8px;
 }
 section .list-items .list-items-p {
   font-size: 16px;
