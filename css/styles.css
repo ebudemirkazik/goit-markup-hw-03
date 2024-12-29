@@ -123,6 +123,9 @@ table {
 
 /* font-family: "Raleway", sans-serif; */
 /* font-family: "Roboto", sans-serif; */
+img {
+  display: block;
+}
 
 body {
   font-family: "Roboto", sans-serif;
