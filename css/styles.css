@@ -265,7 +265,7 @@ address .address-list .address-link:focus {
   padding: 120px 0
 }
 
-section .visually-hidden {
+section .visually-hidden:not:(:focus):not(:active) {
   clip: rect(0 0 0 0); 
   clip-path: inset(50%);
   height: 1px;
@@ -371,6 +371,10 @@ section .portfolio-list {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+}
+
+section .container .portfolio-list .portfolio {
+  width: calc((100% - 48px) / 3);
 }
 
 section .container .portfolio-list .app-div {
