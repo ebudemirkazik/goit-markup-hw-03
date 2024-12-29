@@ -265,7 +265,7 @@ address .address-list .address-link:focus {
   padding: 120px 0
 }
 
-section .visually-hidden:not:(:focus):not(:active) {
+section .visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
